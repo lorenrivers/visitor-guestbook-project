@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor Guestbook</title>
+    <script type="module" src="/main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Visitor Guestbook</h1>
+    <div class="submit-message">
+      <form id="form" class="form-container">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required />
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message" required />
+        <button type="submit">Submit your message!</button>
+      </form>
+    </div>
+    <h2>Message Board</h2>
+    <div id="messageBoard"></div>
+  </body>
+</html>
