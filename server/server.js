@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 import Database from "better-sqlite3";
 
 const app = express();
