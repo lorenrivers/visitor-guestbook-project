@@ -1,12 +1,10 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import Database from "better-sqlite3";
 
 const app = express();
 const PORT = "9898";
 const db = new Database("database.db"); //connect to database to get SQL methods
-dotenv.config();
 
 app.use(express.json()); //parse incoming json requests
 app.use(cors()); //tells server to accept requests from outside of itself
