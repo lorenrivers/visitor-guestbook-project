@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const messageBoard = document.getElementById("messageBoard");
-const serverURL = "http://localhost:9898";
+const serverURL = import.meta.env.VITE_Server;
 
 //Add an event listener to the submit message button
 // This is async because we don't want fetch to occur until user sends info to the server.
